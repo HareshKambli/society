@@ -1,0 +1,30 @@
+{% extends 'bgnm/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'bgnm/style_home.css' %}">
+</head>
+{% block body %}
+<body Topmargin="20" style="background-image: url({% static 'bgnm/photos/home/pexels-photo.jpg' %})";>
+
+    <div class="header">
+		<font face="Algerian" color="#450746" size="8" >Bal Gopal Navratrostav Mandal</font>
+	</div>
+	<br>
+
+	<div class="polaroid">
+  		<img src="{% static 'bgnm/photos/home/rajgad.jpg' %}" alt="5 Terre" style="position:absolute; left:50px; top:230px; height:175px; border-radius:5px; transform: rotate(10deg);">
+		<img src="{% static 'bgnm/photos/home/dahihandi.jpg' %}" alt="5 Terre" style="position:absolute; left:480px; top:300px; height:175px; border-radius:5px; transform: rotate(-10deg);">
+		<img src="{% static 'bgnm/photos/home/holi.jpg' %}" alt="5 Terre" style="position:absolute; width:15%; left:800px; top:300px; height:205px; border-radius:5px; transform: rotate(5deg);">
+		<img src="{% static 'bgnm/photos/home/independence.jpg' %}" alt="5 Terre" style="position:absolute; width:20%; left:1050px; top:250px; height:175px; border-radius:5px; transform: rotate(-5deg);">
+		<img src="{% static 'bgnm/photos/home/devi.jpg' %}" alt="5 Terre" style="position:absolute; width:20%; left:100px; top:500px; height:175px; border-radius:5px; transform: rotate(-5deg);">
+		<img src="{% static 'bgnm/photos/home/raigad2.jpg' %}" alt="5 Terre" style="position:absolute; width:20%;  left:500px; top:550px; height:175px; border-radius:5px; transform: rotate(0deg);">
+		<img src="{% static 'bgnm/photos/home/ganpati.jpg' %}" alt="5 Terre" style="position:absolute; width:25%; left:900px; top:550px; height:190px; border-radius:5px; transform: rotate(-5deg);">
+  	</div>
+
+</body>
+{% endblock %}
+</html>

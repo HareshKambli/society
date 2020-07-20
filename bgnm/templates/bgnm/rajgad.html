@@ -1,0 +1,225 @@
+{% extends 'bgnm/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rajgad</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://fonts.googleapis.com/css?family=Alice|Playfair+Display:900" rel="stylesheet" type="text/css" />
+
+</head>
+{% block body %}
+<body>
+
+<div class="w3-container">
+  <h1 class="heading">RAJGAD</h1>
+  <br><br><br>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="{% static 'bgnm/photos/rajgad/1.jpg' %}" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/rajgad/2.jpg' %}" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/rajgad/3.jpg' %}" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/rajgad/4.jpg' %}" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/rajgad/5.jpg' %}" onclick="openModal();currentSlide(5)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/rajgad/6.jpg' %}" onclick="openModal();currentSlide(6)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/rajgad/7.jpg' %}" onclick="openModal();currentSlide(7)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/rajgad/8.jpg' %}" onclick="openModal();currentSlide(8)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/rajgad/9.jpg' %}" onclick="openModal();currentSlide(9)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/rajgad/10.jpg' %}" onclick="openModal();currentSlide(10)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/rajgad/11.jpg' %}" onclick="openModal();currentSlide(11)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/rajgad/12.jpg' %}" onclick="openModal();currentSlide(12)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/rajgad/13.jpg' %}" onclick="openModal();currentSlide(13)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/rajgad/14.jpg' %}" onclick="openModal();currentSlide(14)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/rajgad/15.jpg' %}" onclick="openModal();currentSlide(15)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/rajgad/16.jpg' %}" onclick="openModal();currentSlide(16)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/rajgad/17.jpg' %}" onclick="openModal();currentSlide(17)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/rajgad/18.jpg' %}" onclick="openModal();currentSlide(18)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/rajgad/19.jpg' %}" onclick="openModal();currentSlide(19)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/rajgad/20.jpg' %}" onclick="openModal();currentSlide(20)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/rajgad/21.jpg' %}" onclick="openModal();currentSlide(21)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/rajgad/22.jpg' %}" onclick="openModal();currentSlide(22)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/rajgad/23.jpg' %}" onclick="openModal();currentSlide(23)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 23</div>
+      <img src="{% static 'bgnm/photos/rajgad/1.jpg' %}" style="width:100%";>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 23</div>
+      <img src="{% static 'bgnm/photos/rajgad/2.jpg' %}" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 23</div>
+      <img src="{% static 'bgnm/photos/rajgad/3.jpg' %}" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 23</div>
+      <img src="{% static 'bgnm/photos/rajgad/4.jpg' %}" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 23</div>
+      <img src="{% static 'bgnm/photos/rajgad/5.jpg' %}" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 23</div>
+      <img src="{% static 'bgnm/photos/rajgad/6.jpg' %}" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 23</div>
+      <img src="{% static 'bgnm/photos/rajgad/7.jpg' %}" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 23</div>
+      <img src="{% static 'bgnm/photos/rajgad/8.jpg' %}" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 23</div>
+      <img src="{% static 'bgnm/photos/rajgad/9.jpg' %}" style="width:100%">
+    </div>
+
+	<div class="mySlides">
+      <div class="numbertext">10 / 23</div>
+      <img src="{% static 'bgnm/photos/rajgad/10.jpg' %}" style="width:100%">
+    </div>
+
+	<div class="mySlides">
+      <div class="numbertext">11 / 23</div>
+      <img src="{% static 'bgnm/photos/rajgad/11.jpg' %}" style="width:100%">
+    </div>
+
+	<div class="mySlides">
+      <div class="numbertext">12 / 23</div>
+      <img src="{% static 'bgnm/photos/rajgad/12.jpg' %}" style="width:100%">
+    </div>
+
+	<div class="mySlides">
+      <div class="numbertext">13 / 23</div>
+      <img src="{% static 'bgnm/photos/rajgad/13.jpg' %}" style="width:100%">
+    </div>
+
+	<div class="mySlides">
+      <div class="numbertext">14 / 23</div>
+      <img src="{% static 'bgnm/photos/rajgad/14.jpg' %}" style="width:100%">
+    </div>
+
+	<div class="mySlides">
+      <div class="numbertext">15 / 23</div>
+      <img src="{% static 'bgnm/photos/rajgad/15.jpg' %}" style="width:100%">
+    </div>
+
+	<div class="mySlides">
+      <div class="numbertext">16 / 23</div>
+      <img src="{% static 'bgnm/photos/rajgad/16.jpg' %}" style="width:100%">
+    </div>
+
+	<div class="mySlides">
+      <div class="numbertext">17 / 23</div>
+      <img src="{% static 'bgnm/photos/rajgad/17.jpg' %}" style="width:100%">
+    </div>
+
+	<div class="mySlides">
+      <div class="numbertext">18 / 23</div>
+      <img src="{% static 'bgnm/photos/rajgad/18.jpg' %}" style="width:100%">
+    </div>
+
+	<div class="mySlides">
+      <div class="numbertext">19 / 23</div>
+      <img src="{% static 'bgnm/photos/rajgad/19.jpg' %}" style="width:100%">
+    </div>
+
+	<div class="mySlides">
+      <div class="numbertext">20 / 23</div>
+      <img src="{% static 'bgnm/photos/rajgad/20.jpg' %}" style="width:100%">
+    </div>
+
+	<div class="mySlides">
+      <div class="numbertext">21 / 23</div>
+      <img src="{% static 'bgnm/photos/rajgad/21.jpg' %}" style="width:100%">
+    </div>
+
+	<div class="mySlides">
+      <div class="numbertext">22 / 23</div>
+      <img src="{% static 'bgnm/photos/rajgad/22.jpg' %}" style="width:100%;>
+    </div>
+
+	<div class="mySlides">
+      <div class="numbertext">23 / 23</div>
+      <img src="{% static 'bgnm/photos/rajgad/23.jpg' %}" style="width:100%">
+    </div>
+
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+  </div>
+</div>
+{% endblock %}
+
+
+
+</body>
+</html>
+

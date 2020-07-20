@@ -1,0 +1,108 @@
+{% extends 'bgnm/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>{% block title %}Dahihandi{% endblock %}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://fonts.googleapis.com/css?family=Alice|Playfair+Display:900" rel="stylesheet" type="text/css" />
+
+</head>
+{% block body %}
+<body>
+
+<div class="w3-container">
+  <h1 class="heading">DAHIHANDI</h1>
+  <br><br><br>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="{% static 'bgnm/photos/Dahihandi/2017/1.jpg' %}" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/Dahihandi/2017/2.jpg' %}" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/Dahihandi/2017/3.jpg' %}" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/Dahihandi/2017/4.jpg' %}" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/Dahihandi/2017/5.jpg' %}" onclick="openModal();currentSlide(5)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/Dahihandi/2017/6.jpg' %}" onclick="openModal();currentSlide(6)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/Dahihandi/2017/7.jpg' %}" onclick="openModal();currentSlide(7)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/Dahihandi/2017/8.jpg' %}" onclick="openModal();currentSlide(8)" class="hover-shadow">
+  </div>
+
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 23</div>
+      <img src="{% static 'bgnm/photos/Dahihandi/2017/1.jpg' %}" style="width:100%";>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 23</div>
+      <img src="{% static 'bgnm/photos/Dahihandi/2017/2.jpg' %}" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 23</div>
+      <img src="{% static 'bgnm/photos/Dahihandi/2017/3.jpg' %}" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 23</div>
+      <img src="{% static 'bgnm/photos/Dahihandi/2017/4.jpg' %}" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 23</div>
+      <img src="{% static 'bgnm/photos/Dahihandi/2017/5.jpg' %}" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 23</div>
+      <img src="{% static 'bgnm/photos/Dahihandi/2017/6.jpg' %}" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 23</div>
+      <img src="{% static 'bgnm/photos/Dahihandi/2017/7.jpg' %}" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 23</div>
+      <img src="{% static 'bgnm/photos/Dahihandi/2017/8.jpg' %}" style="width:100%">
+    </div>
+
+
+
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+  </div>
+</div>
+{% endblock %}
+
+
+
+</body>
+</html>
+

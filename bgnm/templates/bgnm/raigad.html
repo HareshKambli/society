@@ -1,0 +1,161 @@
+{% extends 'bgnm/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Raigad</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://fonts.googleapis.com/css?family=Alice|Playfair+Display:900" rel="stylesheet" type="text/css" />
+
+</head>
+{% block body %}
+<body>
+
+<div class="w3-container">
+  <h1 class="heading">RAIGAD</h1>
+  <br><br><br>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="{% static 'bgnm/photos/raigad/1.jpg' %}" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/raigad/2.jpg' %}" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/raigad/3.jpg' %}" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/raigad/4.jpg' %}" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/raigad/5.jpg' %}" onclick="openModal();currentSlide(5)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/raigad/6.jpg' %}" onclick="openModal();currentSlide(6)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/raigad/7.jpg' %}" onclick="openModal();currentSlide(7)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/raigad/8.jpg' %}" onclick="openModal();currentSlide(8)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/raigad/9.jpg' %}" onclick="openModal();currentSlide(9)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/raigad/10.jpg' %}" onclick="openModal();currentSlide(10)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/raigad/11.jpg' %}" onclick="openModal();currentSlide(11)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/raigad/12.jpg' %}" onclick="openModal();currentSlide(12)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/raigad/13.jpg' %}" onclick="openModal();currentSlide(13)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/raigad/14.jpg' %}" onclick="openModal();currentSlide(14)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'bgnm/photos/raigad/15.jpg' %}" onclick="openModal();currentSlide(15)" class="hover-shadow">
+  </div>
+ 
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 23</div>
+      <img src="{% static 'bgnm/photos/raigad/1.jpg' %}" style="width:100%";>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 23</div>
+      <img src="{% static 'bgnm/photos/raigad/2.jpg' %}" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 23</div>
+      <img src="{% static 'bgnm/photos/raigad/3.jpg' %}" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 23</div>
+      <img src="{% static 'bgnm/photos/raigad/4.jpg' %}" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 23</div>
+      <img src="{% static 'bgnm/photos/raigad/5.jpg' %}" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 23</div>
+      <img src="{% static 'bgnm/photos/raigad/6.jpg' %}" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 23</div>
+      <img src="{% static 'bgnm/photos/raigad/7.jpg' %}" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 23</div>
+      <img src="{% static 'bgnm/photos/raigad/8.jpg' %}" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 23</div>
+      <img src="{% static 'bgnm/photos/raigad/9.jpg' %}" style="width:100%">
+    </div>
+
+	<div class="mySlides">
+      <div class="numbertext">10 / 23</div>
+      <img src="{% static 'bgnm/photos/raigad/10.jpg' %}" style="width:100%">
+    </div>
+
+	<div class="mySlides">
+      <div class="numbertext">11 / 23</div>
+      <img src="{% static 'bgnm/photos/raigad/11.jpg' %}" style="width:100%">
+    </div>
+
+	<div class="mySlides">
+      <div class="numbertext">12 / 23</div>
+      <img src="{% static 'bgnm/photos/raigad/12.jpg' %}" style="width:100%">
+    </div>
+
+	<div class="mySlides">
+      <div class="numbertext">13 / 23</div>
+      <img src="{% static 'bgnm/photos/raigad/13.jpg' %}" style="width:100%">
+    </div>
+
+	<div class="mySlides">
+      <div class="numbertext">14 / 23</div>
+      <img src="{% static 'bgnm/photos/raigad/14.jpg' %}" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">15 / 23</div>
+      <img src="{% static 'bgnm/photos/raigad/15.jpg' %}" style="width:100%">
+    </div>
+
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+  </div>
+</div>
+{% endblock %}
+
+
+
+</body>
+</html>
+

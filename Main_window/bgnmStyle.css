@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+		background-image: url("pexels-photo.jpg");
+		height: 100%; 
+		background-repeat: no-repeat;
+		background-size: cover;
+}
+/* The navigation menu */
+ul {
+		list-style-type: none;
+		position:relative;
+		margin-bottom: 20px;
+		padding: 0;
+		overflow: hidden;
+		background-color: #5E427F;
+		border: 1px solid #e7e7e7;
+  		
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: WHITE;
+	text-align: center;
+	padding: 7px 16px;
+	text-weight:bold;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+li a:hover:not(.active) {
+	background-color: #80ff80;
+}
+	
+.header {
+    /*background-color: #5B2C6F;*/
+	text-align: center;
+	width: 900px;
+	/*padding: 1px;*/
+	margin-left: auto;
+	margin-right: auto;
+		
+}	
+
+div.polaroid {
+  width: 20%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 10px;
+  border-radius: 50px;
+}
+
+img{
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+

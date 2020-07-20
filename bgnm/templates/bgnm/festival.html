@@ -1,0 +1,64 @@
+{% extends 'bgnm/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %}Festivals{% endblock %}</title>
+
+</head>
+{% block body %}
+    <body style="background-image: url({% static 'bgnm/photos/festival/ganpati4.jpg' %})">
+    <div class="festivals">
+        <div class="gallery">
+          <a  href="{% url 'republic' %}">
+            <img src="{% static 'bgnm/photos/festival/republic.jfif' %}" alt="5Terre" width="250" height="150">
+          </a>
+          <div class="desc">REPUBLIC DAY</div>
+        </div>
+
+        <div class="gallery">
+          <a href="{% url 'shivjayanti' %}">
+            <img src="{% static 'bgnm/photos/festival/shivjayanti2.jpg' %}" alt="Forest" width="250" height="150">
+          </a>
+          <div class="desc">SHIVJAYANTI</div>
+        </div>
+
+        <div class="gallery">
+          <a  href="{% url 'dahihandi' %}">
+            <img src="{% static 'bgnm/photos/festival/dahihandi.jfif' %}" alt="Northern Lights" width="250" height="150">
+          </a>
+          <div class="desc">DAHIHANDI</div>
+        </div>
+
+        <div class="gallery">
+          <a  href="{% url 'ganpati' %}">
+            <img src="{% static 'bgnm/photos/festival/ganesh.jpg' %}" alt="Mountains" width="250" height="150">
+          </a>
+          <div class="desc">GANESH CHATURTHI</div>
+        </div>
+        <br><br>
+        <div class="gallery">
+          <a  href="{% url 'devi' %}">
+            <img src="{% static 'bgnm/photos/festival/devi.jfif' %}" alt="5Terre" width="250" height="150">
+          </a>
+          <div class="desc">NAVRATROSTAV</div>
+        </div>
+
+        <div class="gallery">
+          <a  href="{% url 'independence' %}">
+            <img src="{% static 'bgnm/photos/festival/independence.jfif' %}" alt="5Terre" width="250" height="150">
+          </a>
+          <div class="desc">INDEPENDENCE DAY</div>
+        </div>
+
+        <div class="gallery">
+          <a  href="{% url 'holi' %}">
+            <img src="{% static 'bgnm/photos/festival/holi.jfif' %}" alt="5Terre" width="250" height="150">
+          </a>
+        <div class="desc">HOLI</div>
+        </div>
+
+    </div>
+{% endblock %}
+</body>
+</html>

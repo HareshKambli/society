@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Title{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'bgnm/css files/style_base.css' %}">
+    <link rel="stylesheet" href="{% static 'bgnm/css files/style_home.css' %}">
+    <link rel="stylesheet" href="{% static 'bgnm/css files/style_festival.css' %}"/>
+    <link rel="stylesheet" href="{% static 'bgnm/css files/style_picnic.css' %}" />
+    <link rel="stylesheet" href="{% static 'bgnm/css files/style_rajgad.css' %}">
+    <link rel="stylesheet" href="{% static 'bgnm/css files/style_dahihandi.css' %}">
+    <link rel="stylesheet" href="{% static 'bgnm/css files/style_members.css' %}">
+    <script src="{% static 'bgnm/scripts/script_rajgad.js' %}"></script>
+
+</head>
+<body>
+    <div>
+		<ul>
+		  <li><a href="{% url 'home' %}"><b>Home</b></a></li>
+		  <li><a href="{% url 'festival' %}"><b>Festivals</b></a></li>
+		  <li><a href="{% url 'picnic' %}"><b>Picnic</b></a></li>
+		  <li><a href="{% url 'members' %}"><b>Members</b></a></li>
+
+            {% if user.is_authenticated %}
+                <li style="float: right;display: block;color: WHITE;text-align: center;text-weight:bold;text-decoration: none;font-size: 17px;"><a href="{% url 'logout' %}"><b>Logout</b></a></li>
+            <li style="float: right;display: block;color: WHITE;text-align: center;padding: 7px 20px;text-weight:bold;text-decoration: none;font-size: 17px;"><b>Welcome {{ user.username }}</b></li>
+            {% else %}
+                <li style="float: right;display: block;color: WHITE;text-align: center;text-weight:bold;text-decoration: none;font-size: 17px;"><a href="{% url 'login' %}">Login</a></li>
+            {% endif %}
+
+		</ul>
+	</div>
+
+    {% block body %}
+    {% endblock %}
+</body>
+</html>

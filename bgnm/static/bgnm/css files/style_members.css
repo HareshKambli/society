@@ -1,0 +1,139 @@
+body{
+background-color:#E2EBF1;
+}
+
+ul {
+		list-style-type: none;
+		position:relative;
+		margin-bottom: 20px;
+		padding: 0;
+		overflow: hidden;
+		background-color: #5E427F;
+		border: 1px solid #e7e7e7;
+
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: WHITE;
+	text-align: center;
+	padding: 7px 16px;
+	text-weight:bold;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+li a:hover:not(.active) {
+	background-color: #80ff80;
+}
+
+.heading{
+  width: 500px;
+  padding-top:50px;
+  margin-left:425px;
+  height: 30px;
+  text-align:center;
+  font-weight: 900;
+  line-height: 20px;
+  font-size: 43px;
+  font-family: 'Coustard', serif;
+  /*border-bottom-style:solid ;
+  border-color:#F0B413;*/
+  color:#1561A2;
+
+}
+
+.core{
+	position:relative;
+	background-color:#A21548;
+	height:40px;
+	padding-left:10px;
+
+	font-size:25px;
+	color:white;
+	font-family: 'Coustard', serif;
+
+}
+
+.row > .column {
+  padding: 0 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 31%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  background-color: #D1CBF3;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+  font-family: Dubai;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: red;
+  font-size:20px;
+}
+
+.row > .column2 {
+  padding: 0 0px;
+}
+.column2 {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column2 {
+    width: 100%;
+    display: block;
+  }
+}
+
+.post{
+	width:100%;
+	background-color:black;
+	color:white;
+	height:30px;
+	text-align:center;
+	font-size:25px;
+	font-family: Lucida Fax;
+}

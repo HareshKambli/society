@@ -1,0 +1,71 @@
+{% extends 'bgnm/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %}Picnic{% endblock %}</title>
+
+</head>
+{% block body %}
+<body style="background-image: url({% static 'bgnm/photos/picnic/beach2.jpeg' %});">
+
+
+    <div class="places">
+        <div class="gallery">
+          <a href="{% url 'rajgad' %}">
+            <img src="{% static 'bgnm/photos/picnic/Rajgad.jpg' %}" alt="5Terre" width="250" height="150">
+          </a>
+          <div class="desc">RAJGAD</div>
+        </div>
+
+        <div class="gallery">
+          <a href="{% url 'shivneri' %}">
+            <img src="{% static 'bgnm/photos/picnic/shivneri.jpg' %}" alt="Forest" width="250" height="150">
+          </a>
+          <div class="desc">SHIVNERI</div>
+        </div>
+
+        <div class="gallery">
+          <a href="{% url 'raigad' %}">
+            <img src="{% static 'bgnm/photos/picnic/Raigad.jpg' %}" alt="Northern Lights" width="250" height="150">
+          </a>
+          <div class="desc">RAIGAD</div>
+        </div>
+
+        <div class="gallery">
+          <a href="{% url 'malvan' %}">
+            <img src="{% static 'bgnm/photos/picnic/Malvan.jpg' %}" alt="Mountains" width="250" height="150">
+          </a>
+          <div class="desc">MALVAN</div>
+        </div>
+        <br><br>
+        <div class="gallery">
+          <a href="{% url 'harihareshwar' %}">
+            <img src="{% static 'bgnm/photos/picnic/Harihareshwar.jpg' %}" alt="5Terre" width="250" height="150">
+          </a>
+          <div class="desc">HARIHARESHWAR</div>
+        </div>
+
+        <div class="gallery">
+          <a href="{% url 'khopoli' %}">
+            <img src="{% static 'bgnm/photos/picnic/Khopoli.jpg' %}" alt="5Terre" width="250" height="150">
+          </a>
+          <div class="desc">KHOPOLI</div>
+        </div>
+
+        <div class="gallery">
+          <a href="{% url 'malvali' %}">
+            <img src="{% static 'bgnm/photos/picnic/Malavali.jpg' %}" alt="5Terre" width="250" height="150">
+          </a>
+        <div class="desc">MALVALI</div>
+        </div>
+        <div class="gallery">
+          <a href="{% url 'vijaydurga' %}">
+            <img src="{% static 'bgnm/photos/picnic/vijaydurga.jpg' %}" alt="5Terre" width="250" height="150">
+          </a>
+        <div class="desc">VIJAYDURGA</div>
+        </div>
+    </div>
+</body>
+{% endblock %}
+</html>

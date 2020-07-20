@@ -1,0 +1,60 @@
+body{
+
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+ul {
+		list-style-type: none;
+		position:relative;
+		margin-bottom: 20px;
+		padding: 0;
+		overflow: hidden;
+		background-color: #5E427F;
+		border: 1px solid #e7e7e7;
+
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: WHITE;
+	text-align: center;
+	padding: 7px 16px;
+	text-weight:bold;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+li a:hover:not(.active) {
+	background-color: #80ff80;
+}
+
+img { border-radius: 8px;}
+
+div.places{
+margin-left: 570px;
+}
+
+div.gallery {
+  margin-bottom: 40px;
+  border: 2px solid #000;
+  border-radius:8px;
+  float: left;
+  width: 250px;
+
+}
+
+div.desc {
+  padding: 5px;
+  text-align: center;
+  color:White;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  weight: bold;
+  margin: 0px;
+  background-color:#41464B
+}
